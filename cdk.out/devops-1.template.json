@@ -1,0 +1,32 @@
+{
+  "Resources": {
+    "Devops6AFB2B37": {
+      "Type": "AWS::S3::Bucket",
+      "Properties": {
+        "VersioningConfiguration": {
+          "Status": "Enabled"
+        }
+      },
+      "UpdateReplacePolicy": "Delete",
+      "DeletionPolicy": "Delete",
+      "Metadata": {
+        "aws:cdk:path": "devops-1/Devops/Resource"
+      }
+    }
+  },
+  "Outputs": {
+    "bucket": {
+      "Value": {
+        "Fn::Join": [
+          "",
+          [
+            "bucket_name:",
+            {
+              "Ref": "Devops6AFB2B37"
+            }
+          ]
+        ]
+      }
+    }
+  }
+}

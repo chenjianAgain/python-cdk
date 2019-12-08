@@ -1,0 +1,45 @@
+{
+  "version": "tree-0.1",
+  "tree": {
+    "id": "App",
+    "path": "",
+    "children": {
+      "Tree": {
+        "id": "Tree",
+        "path": "Tree"
+      },
+      "devops": {
+        "id": "devops",
+        "path": "devops",
+        "children": {
+          "Devops5": {
+            "id": "Devops5",
+            "path": "devops/Devops5",
+            "children": {
+              "Resource": {
+                "id": "Resource",
+                "path": "devops/Devops5/Resource",
+                "attributes": {
+                  "aws:cdk:cloudformation:type": "AWS::S3::Bucket",
+                  "aws:cdk:cloudformation:props": {
+                    "versioningConfiguration": {
+                      "status": "Enabled"
+                    }
+                  }
+                }
+              },
+              "Notifications": {
+                "id": "Notifications",
+                "path": "devops/Devops5/Notifications"
+              }
+            }
+          },
+          "bucket": {
+            "id": "bucket",
+            "path": "devops/bucket"
+          }
+        }
+      }
+    }
+  }
+}

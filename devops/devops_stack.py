@@ -1,4 +1,7 @@
-from aws_cdk import core
+from aws_cdk import (
+    aws_s3 as s3,
+    core
+)
 
 
 class DevopsStack(core.Stack):
@@ -7,3 +10,10 @@ class DevopsStack(core.Stack):
         super().__init__(scope, id, **kwargs)
 
         # The code that defines your stack goes here
+        bucket = s3.Bucket(self, 
+            "Devops5", 
+            versioned=True,
+            removal_policy=core.RemovalPolicy.DESTROY)
+        core.CfnOutput(self, 'bucket', value="bucket_name:{}".format(
+            bucket.bucket_name))
+        

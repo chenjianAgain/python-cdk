@@ -1,0 +1,69 @@
+{
+  "version": "1.16.0",
+  "artifacts": {
+    "Tree": {
+      "type": "cdk:tree",
+      "properties": {
+        "file": "tree.json"
+      }
+    },
+    "devops": {
+      "type": "aws:cloudformation:stack",
+      "environment": "aws://unknown-account/unknown-region",
+      "properties": {
+        "templateFile": "devops.template.json"
+      },
+      "metadata": {
+        "/devops/Devops5/Resource": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "Devops50EB03F90",
+            "trace": [
+              "new Bucket (/tmp/jsii-kernel-h8un2C/node_modules/@aws-cdk/aws-s3/lib/bucket.js:366:26)",
+              "obj._wrapSandboxCode (/home/ubuntu/environment/devops/.env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:49)",
+              "Kernel._wrapSandboxCode (/home/ubuntu/environment/devops/.env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8202:20)",
+              "Kernel._create (/home/ubuntu/environment/devops/.env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:26)",
+              "Kernel.create (/home/ubuntu/environment/devops/.env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7503:21)",
+              "KernelHost.processRequest (/home/ubuntu/environment/devops/.env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7293:28)",
+              "KernelHost.run (/home/ubuntu/environment/devops/.env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7233:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/ubuntu/environment/devops/.env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ],
+        "/devops/bucket": [
+          {
+            "type": "aws:cdk:logicalId",
+            "data": "bucket",
+            "trace": [
+              "obj._wrapSandboxCode (/home/ubuntu/environment/devops/.env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:49)",
+              "Kernel._wrapSandboxCode (/home/ubuntu/environment/devops/.env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:8202:20)",
+              "Kernel._create (/home/ubuntu/environment/devops/.env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7749:26)",
+              "Kernel.create (/home/ubuntu/environment/devops/.env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7503:21)",
+              "KernelHost.processRequest (/home/ubuntu/environment/devops/.env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7293:28)",
+              "KernelHost.run (/home/ubuntu/environment/devops/.env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7233:14)",
+              "Immediate.setImmediate [as _onImmediate] (/home/ubuntu/environment/devops/.env/lib/python3.6/site-packages/jsii/_embedded/jsii/jsii-runtime.js:7236:37)",
+              "runCallback (timers.js:705:18)",
+              "tryOnImmediate (timers.js:676:5)",
+              "processImmediate (timers.js:658:5)"
+            ]
+          }
+        ]
+      }
+    }
+  },
+  "runtime": {
+    "libraries": {
+      "@aws-cdk/cx-api": "1.18.0",
+      "@aws-cdk/core": "1.18.0",
+      "@aws-cdk/region-info": "1.18.0",
+      "@aws-cdk/aws-iam": "1.18.0",
+      "@aws-cdk/aws-events": "1.18.0",
+      "@aws-cdk/aws-kms": "1.18.0",
+      "@aws-cdk/aws-s3": "1.18.0",
+      "jsii-runtime": "Python/3.6.8"
+    }
+  }
+}
